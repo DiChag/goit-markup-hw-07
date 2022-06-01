@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Для тренировок</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/lesson.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="./index.html">Главная</a></li>
+          <li><a href="./form.html">2 видео "Формы"</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Урок -->
+      <div>
+        <form class="form">
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Илюха Муромец"
+              autofocus
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder="Nokia 3110" />
+          </div>
+
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" placeholder="Для спама" />
+          </div>
+
+          <div role="group" class="group">
+            <h2 class="group-title">Тема доклада</h2>
+            <ul class="topic-options">
+              <li>
+                <input type="checkbox" name="topic" value="html" id="html" />
+                <label for="html">HTML</label>
+              </li>
+              <li>
+                <input type="checkbox" name="topic" value="css" id="css" />
+                <label for="css">CSS</label>
+              </li>
+              <li>
+                <input type="checkbox" name="topic" value="js" id="js" />
+                <label for="js">JavaScript</label>
+              </li>
+            </ul>
+          </div>
+
+          <div role="group" class="group">
+            <h2 class="group-title">Уровень нашей экспертизы</h2>
+            <ul class="experince-options">
+              <li>
+                <input type="radio" name="experience" value="junior" id="junior" />
+                <label for="junior">Junior</label>
+              </li>
+              <li>
+                <input type="radio" name="experience" value="middle" id="middle" />
+                <label for="middle">Middle</label>
+              </li>
+              <li>
+                <input type="radio" name="experience" value="senior" id="senior" />
+                <label for="senior">Senior</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-field">
+            <label for="date">Дата доклада</label>
+            <input
+              class="date"
+              type="datetime-local"
+              name="date"
+              id="date"
+              min="2022-05-22T10:00"
+              max="2022-05-25T19:00"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="pdf">Загрузите копию доклада в pdf</label>
+            <input type="file" name="pdf" />
+          </div>
+
+          <div class="form-field">
+            <label for="comment">Оставьте комментарий</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              rows="8"
+              placeholder="Посмотри на потолок"
+            ></textarea>
+          </div>
+
+          <div class="form-field">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy">Соглашаюсь на всё, за еду</label>
+          </div>
+
+          <button type="submit">Оставить заявку</button>
+        </form>
+      </div>
+
+      <!-- Домашка -->
+      <div>
+        <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
+        <form class="contact-form">
+          <lable class="form-field">
+            <span class="form-lable">Имя</span>
+            <span class="form-input-container">
+              <input class="form-input" name="name" type="text" />
+              <svg class="form-input-icon" width="18px" height="18px">
+                <use href="./images/sprite.svg"></use>
+              </svg>
+            </span>
+          </lable>
+
+          <lable class="form-field">
+            <span class="form-lable">Телефон</span>
+            <span class="form-input-container">
+              <input class="form-input" name="phone" type="tel" />
+              <svg class="form-input-icon" width="18px" height="18px">
+                <use href="./images/sprite.svg"></use>
+              </svg>
+            </span>
+          </lable>
+
+          <lable class="form-field">
+            <span class="form-lable">Почта</span>
+            <span class="form-input-container">
+              <input class="form-input" name="email" type="email" />
+              <svg class="form-input-icon" width="18px" height="18px">
+                <use href="./images/sprite.svg"></use>
+              </svg>
+            </span>
+          </lable>
+
+          <lable class="form-field">
+            <span class="form-lable">Комментарий</span>
+            <span class="form-input-container">
+              <textarea name="comments" placeholder="Введите текст"></textarea>
+            </span>
+          </lable>
+
+          <lable class="form-checkbox">
+            <span class="checkbox-container">
+              <input class="checkbox" name="agreement" type="checkbox" />
+              <svg class="checkbox-icon-checked" width="16px" height="15px">
+                <use href="./images/sprite.svg"></use>
+              </svg>
+              <span class="checkbox-icon-uncheckd"></span>
+            </span>
+            <span class="checkbox-label">
+              Сошлашаюсь с рассылкой и принимаю
+              <a
+                class="checkbox-label-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Условия договора</a
+              >
+            </span>
+          </lable>
+
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0%;
+  padding: 0%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ФОРМА */
+
+.form {
+  width: 500px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  /* outline: 1px solid teal; */
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  margin-bottom: 5px;
+}
+
+.form-field input {
+  margin: 0;
+  padding: 6px 10px;
+  border: 1px solid teal;
+  border-radius: 4px;
+}
+
+.form-field input::placeholder {
+  color: red;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.topic-options,
+.experince-options {
+  padding: 0;
+  margin: 0;
+}
+.topic-options li {
+  display: flex;
+  align-items: center;
+}
+
+/* .topic-options input[type='checkbox'] {
+  width: 40px;
+  height: 40px;
+} */
+.topic-options label {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.form .date {
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 20px 40px;
+  /* border-color: red;
+  font-size: 40px;
+  color: green;
+  background-color: blue; */
+}
+
+.comment {
+  padding: 8px;
+}
