@@ -1,0 +1,17 @@
+:root {
+  --color-text: #757575;
+  --black-text: #000;
+  --light-black-text: #212121;
+  --color-focus: #2196f3;
+  --white-text: #ffffff;
+  --secondary-white: rgba(255, 255, 255, 0.6);
+  --primary-backgrounds: #ffffff;
+  --secondary-backgrounds: #f5f4fa;
+  --footer: #2f303a;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+}

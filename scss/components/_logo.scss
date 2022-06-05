@@ -1,0 +1,31 @@
+.logo-header {
+  margin-right: 93px;
+
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--color-focus);
+
+  &__accent {
+    color: var(--black-text);
+  }
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--color-focus);
+
+  &__accent {
+    color: var(--white-text);
+  }
+}

@@ -1,0 +1,39 @@
+/* Contact nav */
+
+.contact-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 0;
+}
+
+.contact-nav .contact-nav__item + .contact-nav__item {
+  margin-left: 50px;
+}
+/* .contact-nav li:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.contact-nav__link {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-text);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--color-focus);
+  }
+}
+
+.contact-nav__link {
+  display: flex;
+  align-items: center;
+  color: var(--color-text);
+}
+.contact-nav__icon {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
