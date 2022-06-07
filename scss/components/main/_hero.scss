@@ -22,4 +22,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 1.36;
+  }
 }
